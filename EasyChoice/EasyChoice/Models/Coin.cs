@@ -28,11 +28,11 @@ namespace EasyChoice.Models
             }
         }
 
-        public override String ToString()
+        public override string ToString()
         {
-            String value;
+            string value;
 
-            if (this.Value == CoinValue.HEADS)
+            if (Value == CoinValue.HEADS)
             {
                 value = "Heads";
             }
