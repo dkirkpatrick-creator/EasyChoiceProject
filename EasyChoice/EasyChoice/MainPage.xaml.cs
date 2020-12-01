@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EasyChoice.Models;
+using System;
 using System.IO;
 using Xamarin.Forms;
 
@@ -6,29 +7,28 @@ namespace EasyChoice
 {
     public partial class MainPage : ContentPage
     {
-        string _fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "easychoice.txt");
+        //string _fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "easychoice.txt");
 
         public MainPage()
         {
             InitializeComponent();
 
-            if (File.Exists(_fileName))
-            {
-                // implement
-            }
+            //if (File.Exists(_fileName))
+            //{
+            //    // implement
+            //}
         }
 
-        void OnSaveButtonClicked(object sender, EventArgs e)
+        async void OnFlipButtonClicked(object sender, EventArgs e)
         {
-            // implement
+            await Navigation.PushAsync(new CoinFlipPage
+            {
+                BindingContext = new Coin()
+            });
         }
 
-        void OnDeleteButtonClicked(object sender, EventArgs e)
+        void OnSpinButtonClicked(object sender, EventArgs e)
         {
-            if (File.Exists(_fileName))
-            {
-                File.Delete(_fileName);
-            }
             // implement
         }
     }
