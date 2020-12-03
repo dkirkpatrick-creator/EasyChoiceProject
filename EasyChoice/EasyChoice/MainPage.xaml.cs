@@ -27,9 +27,9 @@ namespace EasyChoice
             });
         }
 
-        void OnSpinButtonClicked(object sender, EventArgs e)
+        async void OnSpinButtonClicked(object sender, EventArgs e)
         {
-            // implement
+            await Navigation.PushAsync(new ElementSetPage());
         }
     }
 }
