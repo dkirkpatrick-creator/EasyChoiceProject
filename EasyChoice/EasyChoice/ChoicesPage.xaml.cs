@@ -35,8 +35,6 @@ namespace EasyChoice
                 });
             }
 
-            elementSet.Choices = choices; // this might not be the right place to place this bit of code, check on it later TODO
-
             // could modify these so that they are ordered by date
             listView.ItemsSource = choices
                 .OrderBy(d => d.Name)

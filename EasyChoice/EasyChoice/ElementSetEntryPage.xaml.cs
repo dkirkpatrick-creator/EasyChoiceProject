@@ -35,6 +35,7 @@ namespace EasyChoice
             await Navigation.PopAsync();
         }
 
+        // TODO make it delete choice files as well
         async void OnDeleteButtonClicked(object sender, EventArgs e)
         {
             var elementSet = (ElementSet)BindingContext;

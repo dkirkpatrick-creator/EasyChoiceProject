@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using Xamarin.Forms;
 using EasyChoice.Models;
 using Xamarin.Forms.Xaml;
