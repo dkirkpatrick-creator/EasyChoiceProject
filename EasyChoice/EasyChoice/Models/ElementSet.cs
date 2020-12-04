@@ -8,8 +8,7 @@ namespace EasyChoice.Models
     {
         public string Filename { get; set; }
         public string SetName { get; set; }
+        public string ChoicesFilename { get; set; } // think that this is the way
         public List<Choice> Choices { get; set; }
-
-        // TODO: make it so that you can save an element set, make the SpinWheel page, base it around the Notes project
     }
 }

@@ -2,12 +2,16 @@
 {
     class Choice
     {
-        public string Name { get; }
+        public string Name { get; set; }
+        public string Filename { get; set; }
+        public string ElementSetName { get; set; } // the elementSet to which this choice belongs to
         // private double Weight;   <-- don't think we are using this
 
-        public Choice(string name)
+        public Choice() { }
+
+        public Choice(string elementSetName)
         {
-            Name = name;
+            ElementSetName = elementSetName;
         }
 
         public Choice(Choice otherChoice)

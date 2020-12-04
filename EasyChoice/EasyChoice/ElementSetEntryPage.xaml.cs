@@ -46,5 +46,20 @@ namespace EasyChoice
 
             await Navigation.PopAsync();
         }
+
+        async void OnEditChoicesButtonClicked(object sender, EventArgs e)
+        {
+            var button = (Button)sender;
+
+            ElementSet elementSet = button.CommandParameter as ElementSet;
+
+            if (elementSet != null)
+            {
+                await Navigation.PushAsync(new ChoicesPage
+                {
+                    BindingContext = elementSet
+                });
+            }
+        }
     }
 }

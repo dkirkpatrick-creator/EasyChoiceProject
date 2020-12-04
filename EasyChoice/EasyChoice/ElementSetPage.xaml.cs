@@ -29,10 +29,10 @@ namespace EasyChoice
                 {
                     Filename = filename,
                     SetName = File.ReadAllText(filename)
-                   //TODO: Figure this out with SQL Choices = File.ReadAllText(filename)
                 });
             }
 
+            // could modify these so that they're listed by date instead
             listView.ItemsSource = elementSets
                 .OrderBy(d => d.SetName)
                 .ToList();
