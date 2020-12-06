@@ -16,10 +16,16 @@ namespace EasyChoice
             InitializeComponent();
         }
 
-        // TODO: working on this one
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
             var choice = (Choice)BindingContext;
+
+            // Checking to make sure that the user entered something in the "Name" field before moving on
+            if (string.IsNullOrWhiteSpace(choice.Name))
+            {
+                await DisplayAlert("Invalid Entry", "Please enter a name for the given Choice before saving.", "OK");
+                return; // stops the user from continuing if they didn't enter anything
+            }
 
             if (string.IsNullOrWhiteSpace(choice.Filename))
             {

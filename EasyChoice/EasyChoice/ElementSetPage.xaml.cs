@@ -63,6 +63,16 @@ namespace EasyChoice
 
             ElementSet elementSet = button.CommandParameter as ElementSet;
 
+            // Checking to see if there are any files connected to the selected ElementSet
+            var files = Directory.EnumerateFiles(App.FolderPath, $"*.{elementSet.SetName}_choices.txt");
+
+            if (!files.Any())
+            {
+                await DisplayAlert("Invalid Selection", "The selected ElementSet does not have any choices linked to it." +
+                    "\n\nPlease either populate the selected ElementSet with choices or select a new one.", "OK");
+                return; // stops the user from continuing if they didn't enter any choices for the given ElementSet
+            }
+
             if (elementSet != null)
             {
                 await Navigation.PushAsync(new SpinWheelPage
