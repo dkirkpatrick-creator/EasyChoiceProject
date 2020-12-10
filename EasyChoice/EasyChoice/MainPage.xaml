@@ -1,5 +1,5 @@
-﻿<!-- Authors: Christian Cox & Kyle Daniel Kirkpatrick -->
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Authors: Christian Cox & Kyle Daniel Kirkpatrick -->
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EasyChoice.MainPage">
@@ -18,10 +18,8 @@
                     AlignContent="Center"
                     VerticalOptions="CenterAndExpand">
             <Button Text="Flip a Coin"
-                        x:Name="FlipCoinButton"
                         Clicked="OnFlipButtonClicked" />
             <Button Text="Spin a Wheel"
-                        x:Name="SpinWheelButton"
                         Clicked="OnSpinButtonClicked"/>
         </FlexLayout>
     </StackLayout>

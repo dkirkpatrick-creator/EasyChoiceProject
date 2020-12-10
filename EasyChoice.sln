@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyChoice.Android", "EasyC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyChoice.iOS", "EasyChoice\EasyChoice.iOS\EasyChoice.iOS.csproj", "{DA9621BD-325A-4862-89CA-EC3AE2B0FB55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyChoice", "EasyChoice\EasyChoice\EasyChoice.csproj", "{8BAF1CAB-10CB-4198-8126-ADD2D775E09A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyChoice", "EasyChoice\EasyChoice\EasyChoice.csproj", "{8BAF1CAB-10CB-4198-8126-ADD2D775E09A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,7 +21,6 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A2C42E14-9E5C-4B07-98D3-DFAEEA968898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A2C42E14-9E5C-4B07-98D3-DFAEEA968898}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2C42E14-9E5C-4B07-98D3-DFAEEA968898}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{A2C42E14-9E5C-4B07-98D3-DFAEEA968898}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{A2C42E14-9E5C-4B07-98D3-DFAEEA968898}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{A2C42E14-9E5C-4B07-98D3-DFAEEA968898}.Debug|iPhone.Deploy.0 = Debug|Any CPU
