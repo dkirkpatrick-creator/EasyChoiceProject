@@ -1,26 +1,28 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- Authors: Christian Cox & Kyle Daniel Kirkpatrick -->
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EasyChoice.MainPage">
+             x:Class="EasyChoice.SpinWheelPage">
     <StackLayout Margin="10,35,10,10">
         <Label 
-               Text="EasyChoice"
+               Text="Spinning the wheel for choice-set:"
                HorizontalOptions="Center"
                FontAttributes="Bold,Italic" FontSize="Large" FontFamily="Palatino Linotype" TextColor="#0093FF" />
         <Label
-               Text="Main Menu"
+               Text="{Binding SetName}"
                HorizontalOptions="Center"
-               FontAttributes="Bold" FontSize="50" FontFamily="Palatino Linotype" TextColor="#0093FF" Margin="0,32,0,-60" />
+               FontAttributes="Bold" FontSize="25" FontFamily="Palatino Linotype" TextColor="#0093FF" Margin="0,10,0,-60" />
         <FlexLayout
                     Direction="Column"
                     JustifyContent="Center"
                     AlignContent="Center"
                     VerticalOptions="CenterAndExpand">
-            <Button Text="Flip a Coin"
-                        Clicked="OnFlipButtonClicked" />
-            <Button Text="Spin a Wheel"
-                        Clicked="OnSpinButtonClicked"/>
+            <Image Source="wheel.png" Margin="0, 0, -18, 0"/>
+            <Label 
+                x:Name="myLabel"
+                Text="" />
+            <Button Text="Spin the Wheel!"
+                        Margin="0, 30, 0, 0"
+                        Clicked="OnSpinWheelButtonClicked" />
         </FlexLayout>
     </StackLayout>
 </ContentPage>
