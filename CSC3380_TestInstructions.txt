@@ -42,7 +42,7 @@ Project: EasyChoice
               
           II) If you would like text-instructions, please start from the section
                 titled "Step-by-step instructions for Windows", starting from step
-                "5." (or "6.") till step "10.", before the "Customize the Application"
+                "6." till step "10.", before the "Customize the Application"
                 section.
               
     5. The code should run now! With the way our assert() statements are set up, if you
