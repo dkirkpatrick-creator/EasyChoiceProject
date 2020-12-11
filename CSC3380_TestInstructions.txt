@@ -25,7 +25,7 @@ Project: EasyChoice
               
                 - Our project code should be displayed on Visual Studio at this point.
               
-          b) Or, you can download a zip file of our of our files. Then, when opening
+          b) Or, you can download a zip file of our files. Then, when opening
                 Visual Studio, click on "Open a project or solution". Next, find
                 wherever you saved our files from GitHub, and double click on the
                 "EasyChoice.sln" file. This will open our project code into Visual Studio.
@@ -36,18 +36,18 @@ Project: EasyChoice
           Studio's Android phone emulator:
           https://docs.microsoft.com/en-us/xamarin/get-started/first-app/?pivots=windows
         
-         I) You can watch the video if wanted, just skip the steps where they
-                create a new project/solution, as our solution has already been
+         I) You can watch the video in the link if wanted, just skip the steps where
+                they create a new project/solution, as our solution has already been
                 loaded into Visual Studio.
               
           II) If you would like text-instructions, please start from the section
                 titled "Step-by-step instructions for Windows", starting from step
-                "6." till step "10.", before the "Customize the Application"
+                "6." till step "10.", stopping before the "Customize the Application"
                 section.
               
     5. The code should run now! With the way our assert() statements are set up, if you
            run into any issues while running our app, our assert() statements will catch
-           it, stopping the code and break the debugging process, showing a CallStack so
+           it, stopping the code and breaking the debugging process, showing a CallStack so
            that you can trace back to where the error originated from.
          
 -------------------------------------------------------------------------------------------------
