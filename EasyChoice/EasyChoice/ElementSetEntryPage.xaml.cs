@@ -87,8 +87,6 @@ namespace EasyChoice
                     File.WriteAllText(newFilename, choice.Name);
                 }
 
-
-
                 // Update
                 File.WriteAllText(elementSet.Filename, elementSet.SetName);
             }

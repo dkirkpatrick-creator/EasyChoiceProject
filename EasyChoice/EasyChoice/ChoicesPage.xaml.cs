@@ -34,8 +34,9 @@ namespace EasyChoice
         {
             base.OnAppearing();
 
-            // The ElementSet that contains the choices that we want
+            // The ElementSet that contains the Choices that we want
             var elementSet = (ElementSet)BindingContext;
+            // A list of all of the Choices associated with the bound ElementSet
             var choices = new List<Choice>();
 
             // Getting every Choice file associated with the bound ElementSet

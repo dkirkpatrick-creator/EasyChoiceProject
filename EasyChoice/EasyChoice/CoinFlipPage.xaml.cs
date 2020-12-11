@@ -22,8 +22,8 @@ namespace EasyChoice
          * Associated Button's Text: "Flip the Coin!"
          * 
          * Purpose: When the user clicks on this button, an instance of Coin is
-         * flipped (i.e. a random value of either "HEADS" or "TAILS" is assigned
-         * to the Value property) and a DisplayAlert pops up showing the user
+         * "flipped" (i.e. a random value of either "HEADS" or "TAILS" is assigned
+         * to the Coin's Value property) and a DisplayAlert pops up showing the user
          * what the Coin "landed upon". Additionally, a label is initialized
          * showing the user's result.
          */

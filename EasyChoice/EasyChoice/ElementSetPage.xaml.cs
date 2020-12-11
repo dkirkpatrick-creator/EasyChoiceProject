@@ -12,7 +12,7 @@ namespace EasyChoice
 {
     /**
      * The ElementSetPage shows a list of ElementSets that the user has created.
-     * Additionally, the user can do many to interact with the given ElementSets.
+     * Additionally, the user can do many things to interact with the given ElementSets.
      */
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ElementSetPage : ContentPage
@@ -25,7 +25,7 @@ namespace EasyChoice
 
         /**
          * When the page is initialized, this method is called to load its
-         * contents. A list of ElementSets is then compiled and displayed onto
+         * contents. A list of ElementSets is compiled and displayed onto
          * the page.
          */
         protected override void OnAppearing()
@@ -96,7 +96,7 @@ namespace EasyChoice
          * SpinWheelPage for its use.
          * 
          * However, before this is done, the method makes sure that the ElementSet
-         * Has at least one or more Choices associated with it. If it does not have any,
+         * has at least one or more Choices associated with it. If it does not have any,
          * an Alert is displayed, saying that the user has made an "Invalid
          * Selection", and that they either must try a different ElementSet or
          * populate the one they tried to select. After this message is displayed,
@@ -108,7 +108,7 @@ namespace EasyChoice
 
             ElementSet elementSet = button.CommandParameter as ElementSet;
 
-            // -=Checking to see if there are any files connected to the selected ElementSet=- //
+            // -=Checking to see if there are any Choices connected to the selected ElementSet=- //
 
             var files = Directory.EnumerateFiles(App.FolderPath, $"*.{elementSet.SetName}_choices.txt");
 

@@ -20,6 +20,7 @@ namespace EasyChoice
             InitializeComponent();
 
             // Setting the FolderPath of the App on the given phone
+            // (to be used later on other pages when saving files)
             FolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
 
             // Displaying the MainPage for the user to view
