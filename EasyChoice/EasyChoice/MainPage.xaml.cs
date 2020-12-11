@@ -2,9 +2,7 @@
 
 using EasyChoice.Models;
 using System;
-using System.Diagnostics;
 using Xamarin.Forms;
-using EasyChoice.Listeners; 
 
 namespace EasyChoice
 {
@@ -12,7 +10,7 @@ namespace EasyChoice
     // this is the first page that the user sees when they open the app
     public partial class MainPage : ContentPage
     {
-        // Constructor
+        // Default constructor
         public MainPage()
         {
             InitializeComponent();
@@ -30,7 +28,7 @@ namespace EasyChoice
             // First checking to make sure that the button pressed was indeed the one we wanted
             // the user to press
             string myOutput = "Flip a Coin";
-            Trace.Assert((sender as Button).Text.Equals(myOutput));
+            Debug.Debug.Assert((sender as Button).Text.Equals(myOutput));
 
             // Then creating a new CoinFlipPage and binding a new Coin instance to it
             await Navigation.PushAsync(new CoinFlipPage
@@ -49,12 +47,8 @@ namespace EasyChoice
         {
             // First checking to make sure that the button pressed was indeed the one we wanted
             // the user to press
-            //string myOutput = "Spin a Wheel";
-            //Trace.Assert((sender as Button).Text.Equals(myOutput));
-
-            Trace.Listeners.Clear();
-            Trace.Assert(false, "It's an error");
-
+            string myOutput = "Spin a Wheel";
+            Debug.Debug.Assert((sender as Button).Text.Equals(myOutput));
 
             await Navigation.PushAsync(new ElementSetPage());
         }
