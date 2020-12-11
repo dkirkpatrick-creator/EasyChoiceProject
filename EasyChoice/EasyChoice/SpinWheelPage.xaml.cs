@@ -33,7 +33,7 @@ namespace EasyChoice
             // The current ElementSet that holds all of the choices
             var elementSet = (ElementSet)BindingContext;
 
-            // Checking to make sure that the ElementSet has been selected isn't null
+            // Checking to make sure that the ElementSet that has been selected isn't null
             Debug.Debug.Assert(elementSet != null);
 
             // The list that will hold all of our choices

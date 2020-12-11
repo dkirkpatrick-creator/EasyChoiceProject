@@ -9,7 +9,7 @@ namespace EasyChoice.Models
     class Wheel
     {
         // The Choices property holds a list of Choices from which the user would
-        // like to randomly pick a Choice from
+        // like to randomly pick a Choice
         public List<Choice> Choices { get; }
 
         // A constructor that takes a list of Choices as a parameter.
@@ -20,12 +20,13 @@ namespace EasyChoice.Models
             Choices = new List<Choice>(choices);
         }
 
-        // Returns one Choice within the list of choices that the Wheel holds
+        // This method returns one, random Choice within the list of choices
+        // that the Wheel holds
         public Choice Spin()
         {
             Random rand = new Random();
 
-            // Generating a random index between [0, Choices.Count); this
+            // Generating a random index within [0, Choices.Count); this
             // way there is a chance to randomly pick any one of the elements
             // within the Wheel's list of Choices
             int randomVar = (int)Math.Floor(rand.NextDouble() * Choices.Count);
