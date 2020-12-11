@@ -1,0 +1,56 @@
+Authors: Christian Cox and Kyle Daniel Kirkpatrick
+Course: CSC 3380
+Prof: Dr. Mukhopadhyay
+Project: EasyChoice
+
+\***********************************************************************************************/
+
+                               CSC 3380 - How to Run the App
+                        
+\***********************************************************************************************/
+
+   1. Firstly, please download Visual Studio 2019 (Community version) using the
+          following link: https://visualstudio.microsoft.com/downloads/
+        
+    2. When installing Visual Studio 2019 onto your device, please be sure to
+          download the "Mobile development with .NET" package. Here is a link
+          from Microsoft with instructions on how to do so:
+         https://docs.microsoft.com/en-us/xamarin/get-started/installation/windows
+        
+    3. Next, when opening Visual Studio, please do one of the following to open
+          our project (do either (a) or (b)):
+        
+         a) Click on the "Clone a repository" button and use this link to copy
+                our files: https://github.com/dkirkpatrick-creator/EasyChoiceProject.git
+              
+                - Our project code should be displayed on Visual Studio at this point.
+              
+          b) Or, you can download a zip file of our of our files. Then, when opening
+                Visual Studio, click on "Open a project or solution". Next, find
+                wherever you saved our files from GitHub, and double click on the
+                "EasyChoice.sln" file. This will open our project code into Visual Studio.
+              
+    4. Please see the following link for instructions on how to setup the Android
+          emulator (NOTE: our app was developed only for Android, not iOS, so please
+          run the emulator for Android) and run a Xamarin application on Visual
+          Studio's Android phone emulator:
+          https://docs.microsoft.com/en-us/xamarin/get-started/first-app/?pivots=windows
+        
+         I) You can watch the video if wanted, just skip the steps where they
+                create a new project/solution, as our solution has already been
+                loaded into Visual Studio.
+              
+          II) If you would like text-instructions, please start from the section
+                titled "Step-by-step instructions for Windows", starting from step
+                "5." (or "6.") till step "10.", before the "Customize the Application"
+                section.
+              
+    5. The code should run now! With the way our assert() statements are set up, if you
+           run into any issues while running our app, our assert() statements will catch
+           it, stopping the code and break the debugging process, showing a CallStack so
+           that you can trace back to where the error originated from.
+         
+-------------------------------------------------------------------------------------------------
+
+Thank you and Happy Holidays!
+- Christian and Kyle (Daniel)
